@@ -45,13 +45,13 @@ then
 	# set up git prompt
 	sudo apt install -y git
 	cp .prompt ~/
-    echo "" >> ~/.bashrc
+    	echo "" >> ~/.bashrc
 	echo "# git prompt" >> ~/.bashrc
-    echo "if [ -f ~/.prompt ] || [ -h ~/.prompt ]; then" >> ~/.bashrc
-    echo "  source ~/.prompt" >> ~/.bashrc
-    echo "fi" >> ~/.bashrc
+    	echo "if [ -f ~/.prompt ] || [ -h ~/.prompt ]; then" >> ~/.bashrc
+    	echo "  source ~/.prompt" >> ~/.bashrc
+    	echo "fi" >> ~/.bashrc
 	echo "alias adog='git log --all --decorate --oneline --graph'" >> ~/.bashrc
-    echo "" >> ~/.bashrc
+    	echo "" >> ~/.bashrc
 	
 	# set up PATH for cuda-10.1
 	echo "" >> ~/.bashrc
@@ -67,25 +67,25 @@ then
 	#vim edior
 	sudo apt install -y vim
 
-    #sourcing ~/.bashrc for ssh
-    echo "# source ~/.bashrc for ssh automatically" >> ~/.bash_profile
-    echo "if [ -f ~/.bashrc ]; then" >> ~/.bash_profile
-    echo "    . ~/.bashrc"  >> ~/.bash_profile
-    echo "fi" >> ~/.bash_profile
-    echo "" >> ~/.bash_profile
+        #sourcing ~/.bashrc for ssh
+    	echo "# source ~/.bashrc for ssh automatically" >> ~/.bash_profile
+    	echo "if [ -f ~/.bashrc ]; then" >> ~/.bash_profile
+    	echo "    . ~/.bashrc"  >> ~/.bash_profile
+    	echo "fi" >> ~/.bash_profile
+    	echo "" >> ~/.bash_profile
 
-    # colors for ls
-    # echo "" >> ~/.bashrc
-    # echo "# colors for ls" >> ~/.bashrc
-    # echo "LS_COLORS=\$LS_COLORS:'di=0;35:' ; export LS_COLORS" >> ~/.bashrc
-    # echo "" >> ~/.bashrc
+    	# colors for ls
+    	# echo "" >> ~/.bashrc
+    	# echo "# colors for ls" >> ~/.bashrc
+    	# echo "LS_COLORS=\$LS_COLORS:'di=0;35:' ; export LS_COLORS" >> ~/.bashrc
+    	# echo "" >> ~/.bashrc
 
-    # nano settings
-    cp .nanorc ~/
-    echo "" >> ~/.bashrc
-    echo "# nano settings" >> ~/.bashrc
-    echo "alias nano='nano -c'" >> ~/.bashrc
-    echo "" >> ~/.bashrc
+    	# nano settings
+    	cp .nanorc ~/
+    	echo "" >> ~/.bashrc
+    	echo "# nano settings" >> ~/.bashrc
+    	echo "alias nano='nano -c'" >> ~/.bashrc
+    	echo "" >> ~/.bashrc
 
 	source ~/.bashrc
 else
