@@ -11,8 +11,6 @@ then
 	sudo apt install -y python-pip
 	sudo apt install -y python3-pip
 
-	pip install --upgrade pip
-
 	# adding pip aliases
 	echo "" >> ~/.bashrc
 	echo "#pip aliases" >> ~/.bashrc
@@ -90,7 +88,6 @@ then
     echo "" >> ~/.bashrc
 
 	source ~/.bashrc
-
 else
 	echo "re-run init_setup.sh script after completing driver and cuda tool kit installation"
 fi
