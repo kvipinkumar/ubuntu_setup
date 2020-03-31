@@ -87,6 +87,11 @@ then
     	echo "alias nano='nano -c'" >> ~/.bashrc
     	echo "" >> ~/.bashrc
 
+	# installing misc tools
+	sudo apt install -y htop
+	sudo apt install -y build-essential
+	sudo apt install -y ack-grep
+
 	source ~/.bashrc
 else
 	echo "re-run init_setup.sh script after completing driver and cuda tool kit installation"
