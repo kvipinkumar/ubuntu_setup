@@ -26,12 +26,10 @@ then
 	pip install ipython --user
 	pip3 install ipython --user
 
-	# setting up ipython paths
+        # setting up PATH to $HOME/.local/bin
 	echo "" >> ~/.bashrc
-	echo "# setting up path for ipython" >> ~/.bashrc
-	echo "alias ipython='~/.local/bin/ipython2'" >> ~/.bashrc
-        echo "alias ipython2='~/.local/bin/ipython2'" >> ~/.bashrc
-        echo "alias ipython3='~/.local/bin/ipython3'" >> ~/.bashrc
+        echo "export PATH=\$HOME/.local/bin:\$PATH" >> ~/.bashrc
+	echo "" >> ~/.bashrc
 	
 	# install python required packages
 	pip install numpy --user && pip3 install numpy --user
